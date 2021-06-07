@@ -17,6 +17,22 @@
     font: bold;
 
 	}
+  .btn btn-warning{
+    margin-left: 121px;
+    margin-top: 1px;
+    width: 84px;
+    height: 45px;   
+    background: transparent;
+    border: none;
+    color: white;   
+    font-size:14px;
+    font-weight:700;
+
+  }
+
+  body {
+  background-color: lightblue;
+}
 </style>
   <script>
 		function addToShoppingList() {
@@ -87,19 +103,19 @@
 </div>
 
   
-  <div class="row"><input id="shopping-item"></input><button id="shopping-button" onclick="addToShoppingList()">
-  Add Destination
-  </button></div>
+  <div class="row"><input id="shopping-item" >
+    <button id="shopping-button" class="btn btn-warning" onclick="addToShoppingList()">
+  Add Destination</button></div>
   <div class="row">&nbsp;</div>
   <div class="row">         
 		<button data-toggle="collapse" 
-		data-target="#shopping">My Destinations</button></div>
+		data-target="#shopping" class="btn btn-warning">Reveal Destinations</button></div>
 		<div class="row">
 			<div id="shopping" class=
 			"collapse">
-			<h3>Your Destinations</h3>
+			<h3>Your Destinations:</h3>
 			<ul id="shopping-list"> 
-				<li>Destinations:</li>
+			
 			</ul>
 			</div>
 		</div>
